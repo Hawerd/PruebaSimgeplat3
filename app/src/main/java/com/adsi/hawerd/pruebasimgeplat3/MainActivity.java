@@ -77,6 +77,11 @@ public class MainActivity extends Activity {
         nuclear.start();
     }
 
+    public void pausaAlarma(View v){
+        nuclear = MediaPlayer.create(MainActivity.this, R.drawable.nuclear);
+        nuclear.pause();
+    }
+
     public void paraAlarma(View v){
         nuclear.stop();
     }
