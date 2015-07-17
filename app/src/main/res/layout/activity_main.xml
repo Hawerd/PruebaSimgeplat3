@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:http="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/images">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_material_dark">
+
+        <Button
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="Cargar Datos"
+            android:id="@+id/button"
+            android:layout_gravity="left|bottom|center_horizontal"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="155dp"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:alpha="0.8"
+            android:gravity="center"
+            android:background="@color/background_floating_material_light">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:visibility="visible"
+                android:textIsSelectable="false"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="Flujo"
+                android:gravity="center"
+                android:textColor="#ff020202" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/flujo"
+                android:textSize="40dp"
+                android:textColor="#ff020202"
+                android:textStyle="italic"
+                android:layout_marginTop="40dp"
+                android:text="325"
+                android:gravity="center" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apagar"
+                android:id="@+id/button6"
+                android:layout_marginTop="30dp"
+                android:onClick="paraAlarma" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="155dp"
+            android:layout_height="200dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="#ff37af57"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/flujo2"
+                android:layout_gravity="center"
+                android:textSize="30dp" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="155dp"
+            android:layout_height="200dp"
+            android:layout_gravity="right|top"
+            android:layout_margin="5dp"
+            android:background="@drawable/temperatura"
+            android:alpha="0.8"
+            android:id="@+id/temperatura">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/temp"
+                android:layout_marginTop="155dp"
+                android:textColor="#ff020202"
+                android:textStyle="italic"
+                android:textSize="40dp"
+                android:layout_marginLeft="5dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="155dp"
+            android:layout_height="200dp"
+            android:layout_gravity="right|center_vertical"
+            android:background="#ff4fae91"
+            android:layout_marginTop="75dp"
+            android:layout_marginRight="5dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button3"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <Button
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="Cerrar"
+            android:id="@+id/button2"
+            android:layout_gravity="bottom|center_horizontal|right"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            android:onClick="cerrar" />
+
+    </FrameLayout>
+</RelativeLayout>
